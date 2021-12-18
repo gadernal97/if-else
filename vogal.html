@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vogal</title>
+</head>
+<body>
+    <h1>Vogal ou consonate ?</h1>
+    <div>
+        <input type="text" name="letters" id="letters" placeholder='Digite uma letra!'>
+    </div>
+    <input type="button" value="click" onclick="showLetters()">
+    <script>
+        function showLetters(){
+            let letra=document.getElementById('letters').value.toLowerCase()
+            if(letra =='a' || letra =='e' || letra=='i'||letra=='o' || letra=='u'){
+                alert('É vogal.')
+            }else{
+                alert('É consoante.')
+            }
+        }
+    </script>
+</body>
+</html>

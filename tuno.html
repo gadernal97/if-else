@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turno</title>
+</head>
+<body>
+    <h1>Qual é seu turno</h1>
+    <div>
+       <input type="text" name="letters" id="letra" placeholder="Digite uma letra!"> 
+    </div>
+    <input type="button" value="click" onclick="showSomething()">
+    <script>
+        function showSomething(){
+            let letra=document.querySelector('input#letra').value.toLowerCase()
+            if(letra =='m'){
+                alert('Bom dia')
+            }else if(letra =='v'){
+                alert('Boa tarde')
+            }else if(letra =='n'){
+                alert('Boa noite')
+            }else{
+                alert('Opção invalida.')
+            }
+        }
+    </script>
+</body>
+</html>

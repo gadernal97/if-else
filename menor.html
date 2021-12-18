@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menor</title>
+</head>
+<body>
+    <h1>Número maior</h1>
+    <div>
+        <input type="number" name="number" id="num1" placeholder="Digite um número!">
+    </div>
+    <div>
+        <input type="number" name="number" id="num2" placeholder="Digite um número!">
+    </div>
+    <div>
+        <input type="number" name="number" id="num3" placeholder="Digite um número!">
+    </div>
+    <input type="button" value="click" onclick="showBiggerOrSmaller()">
+    <script>
+        function showBiggerOrSmaller(){
+            let tn1=document.querySelector('input#num1')
+            let tn2=document.querySelector('input#num2')
+            let tn3=document.querySelector('input#num3')
+            let num1=Number(tn1.value)
+            let num2=Number(tn2.value)
+            let num3=Number(tn3.value)
+            if(num1>num2 && num1>num3){
+                alert(`Seu número ${num1}.`)
+            }else if(num2>num1 && num2>num3){
+                alert(`Seu número ${num2}.`)
+            }else{
+                alert(`Seu número ${num3}.`)
+            }
+            if(num1<num2 && num1<num3){
+                alert(`Seu número ${num1}.`)
+            }else if(num2<num1 && num2<num3){
+                alert(`Seu número ${num2}.`)
+            }else{
+                alert(`Seu número ${num3}.`)
+            }
+        }
+    </script>
+</body>
+</html>

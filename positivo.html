@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positivo</title>
+</head>
+<body>
+    <h1>Número positivo</h1>
+    <div>
+       <input type="number" name="number" id="num" placeholder="Digite seu número!"> 
+    </div>
+    <input type="button" value="click" onclick="showNumber()">
+    <script>
+        function showNumber(){
+            let tn1=document.querySelector('input#num')
+            let num=Number(tn1.value)
+            if(num>0){
+                alert(`Esté número é ${num} positivo.`)
+            }else{
+                alert(`Esté número é ${num} negativo.`)
+            }
+        }
+    </script>
+</body>
+</html>

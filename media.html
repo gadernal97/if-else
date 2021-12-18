@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema escolares</title>
+</head>
+<body>
+    <h1>Notas escolares</h1>
+    <div>
+        <input type="number" name="note" id="nota1" placeholder="Digite a sua nota!">
+    </div>
+    <div>
+        <input type="number" name="note" id="nota2" placeholder="Digite a sua nota!">
+    </div>
+    <input type="button" value="click" onclick="showAverage()">
+    <script>
+      function showAverage(){
+          let tn1=document.querySelector('input#nota1')
+          let tn2=document.querySelector('input#nota2')
+          let nota1=Number(tn1.value)
+          let nota2=Number(tn2.value)
+          let resultado=(nota1+nota2)/2
+          if(resultado>=7 && resultado<10){
+            alert(`A sua média é ${resultado}.Aprovado`)
+          }else if(resultado==10){
+            alert(`A sua média é ${resultado}.Aprovado com distinção`)
+          }else{
+            alert(`A sua média é ${resultado}.Reprovado`)
+          }
+      }
+    </script>
+</body>
+</html>

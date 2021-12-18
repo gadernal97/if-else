@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário</title>
+</head>
+<body>
+    <h1>Aumento salárial</h1>
+    <div>
+        <input type="number" name="salário" id="salário" placeholder="Digite seu salário">
+    </div>
+    <input type="button" value="click" onclick="showWage()">
+    <script>
+        function showWage(){
+            let tn1=document.getElementById('salário')
+            let salário=Number(tn1.value)
+            if(salário<280){
+                let aumento=salário+(salário*20/100)
+                document.write(`Seu salário é ${salário} R$. <br>`)
+                documento.write(`Seu novo salário é ${aumento}.`)
+            }else if(salário>280 && salário<=750){
+                let aumento=salário+(salário*15/100)
+                document.write(`Seu salário é ${salário} R$ <br>.`)
+                document.write(`Seu novo salário ${aumento} R$.`)
+            }else if(salário>750 && salário<=1500){
+                let aumento=salário+(salário*10/100)
+                document.write(`Seu salário é ${salário} R$ <br>.`)
+                document.write(`Seu novo salário ${aumento} R$.`)
+            }else{
+                let aumento=salário+(salário*5/100)
+                document.write(`Seu salário é ${salário} R$ <br>.`)
+                document.write(`Seu novo salário ${aumento} R$.`)
+            }
+        }
+    </script>
+</body>
+</html>
